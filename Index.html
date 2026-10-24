@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>StudyBuddy – Learn. Plan. Grow.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5F7FB;--paper:#FFFFFF;--ink:#14213D;--muted:#4A5671;--line:#C9D3EA;--hi:#FFE066;--blue:#2F5BEA;--red:#C00000;--green:#1E8E5A;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1629;--paper:#18223D;--ink:#EEF2FF;--muted:#A9B6D6;--line:#2C3A60;--hi:#8A7A12;--blue:#7C9BFF;--green:#4CD08C}}
+:root[data-theme="dark"]{--bg:#0F1629;--paper:#18223D;--ink:#EEF2FF;--muted:#A9B6D6;--line:#2C3A60;--hi:#8A7A12;--blue:#7C9BFF;--green:#4CD08C}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Nunito,system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.1;margin:0}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font:800 22px "Bricolage Grotesque",sans-serif}
+.btn{display:inline-block;background:var(--blue);color:#fff;text-decoration:none;font-weight:600;padding:13px 22px;border-radius:10px;border:0}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+.btn:focus-visible{outline:3px solid var(--hi);outline-offset:2px}
+.hero{display:grid;gap:32px;padding:28px 0 56px}
+@media(min-width:800px){.hero{grid-template-columns:1.1fr .9fr;align-items:center}}
+h1{font-size:clamp(38px,7vw,64px);font-weight:800}
+mark{background:var(--hi);color:inherit;padding:0 .12em}
+.lead{color:var(--muted);font-size:19px;margin:18px 0 24px;max-width:34ch}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.note{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:22px 22px 22px 44px;position:relative;
+background-image:repeating-linear-gradient(transparent,transparent 35px,var(--line) 36px);background-position:0 8px}
+.note:before{content:"";position:absolute;left:30px;top:0;bottom:0;width:2px;background:#E8808A}
+.note h3{font-size:20px;line-height:36px}
+.note p{margin:0;line-height:36px;color:var(--muted);font-size:16px}
+.note p b{color:var(--ink)}
+.done{color:var(--green)}
+section{padding:48px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(28px,5vw,40px);margin-bottom:22px}
+.grid{display:grid;gap:16px}
+@media(min-width:700px){.grid.c4{grid-template-columns:repeat(4,1fr)}.grid.c3{grid-template-columns:repeat(3,1fr)}}
+.item{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:18px}
+.item h3{font-size:19px;margin-bottom:6px}
+.item p{margin:0;color:var(--muted);font-size:16px}
+.step{font:800 30px "Bricolage Grotesque",sans-serif;color:var(--blue)}
+.price .big{font:800 40px "Bricolage Grotesque",sans-serif}
+.price ul{padding-left:18px;margin:10px 0 0;color:var(--muted);font-size:16px}
+.proof{background:var(--hi);color:#14213D;border-radius:14px;padding:22px;font-weight:600}
+footer{padding:36px 0 48px;border-top:1px solid var(--line);color:var(--muted);font-size:15px}
+footer a{color:var(--blue)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><div class="logo">StudyBuddy</div><a class="btn" href="#join">Join the waitlist</a></nav>
+
+<header class="hero">
+<div>
+<h1>Stop cramming. Start <mark>understanding</mark>.</h1>
+<p class="lead">StudyBuddy is an AI study companion that plans what you study, keeps your notes together, and tests you before exams do.</p>
+<div class="cta"><a class="btn" href="#join">Get early access</a><a class="btn alt" href="#how">See how it works</a></div>
+</div>
+<div class="note" aria-label="Example study plan">
+<h3>Today's plan</h3>
+<p><span class="done">&#10003;</span> Data Structures – Linked Lists (1 hr)</p>
+<p>&#9744; Java – OOP Concepts (1 hr)</p>
+<p>&#9744; Quick revision quiz (30 min)</p>
+<p><b>Small steps every day lead to big results.</b></p>
+</div>
+</header>
+
+<section id="how">
+<h2>Four steps to exam-ready</h2>
+<div class="grid c4">
+<div class="item"><div class="step">1</div><h3>Add your subjects</h3><p>Enter subjects and exam dates.</p></div>
+<div class="item"><div class="step">2</div><h3>Get your plan</h3><p>AI builds a daily study plan for you.</p></div>
+<div class="item"><div class="step">3</div><h3>Learn and save notes</h3><p>All notes live in one place.</p></div>
+<div class="item"><div class="step">4</div><h3>Quiz and track</h3><p>Test yourself and watch progress grow.</p></div>
+</div>
+</section>
+
+<section>
+<h2>Built for college students</h2>
+<div class="grid c3">
+<div class="item"><h3>Personal study plan</h3><p>Know exactly what to study first.</p></div>
+<div class="item"><h3>Notes in one place</h3><p>No more scattered books and chats.</p></div>
+<div class="item"><h3>Quick quizzes</h3><p>Check what you know in minutes.</p></div>
+<div class="item"><h3>Progress tracking</h3><p>See where you stand before exams.</p></div>
+<div class="item"><h3>Simple to use</h3><p>Clean design and easy navigation.</p></div>
+<div class="item"><h3>Affordable</h3><p>Priced for a student budget.</p></div>
+</div>
+</section>
+
+<section>
+<div class="proof">We tested the prototype with 10 students. All 10 liked it.</div>
+</section>
+
+<section>
+<h2>Simple pricing</h2>
+<div class="grid c3 price">
+<div class="item"><h3>Free</h3><div class="big">&#8377;0</div><ul><li>Basic study plan</li><li>Notes</li></ul></div>
+<div class="item"><h3>Premium</h3><div class="big">&#8377;99<small style="font-size:16px"> /month</small></div><ul><li>Full AI study plans</li><li>Unlimited quizzes</li><li>Progress insights</li><li>&#8377;799 per year</li></ul></div>
+<div class="item"><h3>For colleges</h3><div class="big">&#8377;250<small style="font-size:16px"> /student/year</small></div><ul><li>Bulk license discounts</li></ul></div>
+</div>
+</section>
+
+<section id="join">
+<h2>Be first to try StudyBuddy</h2>
+<p style="color:var(--muted);max-width:44ch">Launching first in Chittoor and Tirupati colleges. Tell us you're in and we'll send your invite.</p>
+<p><a class="btn" href="mailto:vaishnavichitraju@gmail.com?subject=StudyBuddy%20early%20access">Email us to join</a></p>
+</section>
+
+<footer>
+<strong>StudyBuddy</strong> – Learn. Plan. Grow.<br>
+Sri Venkateshwara College of Engineering and Technology, Chittoor, Andhra Pradesh<br>
+Contact: <a href="mailto:vaishnavichitraju@gmail.com">vaishnavichitraju@gmail.com</a>
+</footer>
+</div>
+</body>
+</html>
